@@ -15,6 +15,11 @@ conda create --name comfy python=3.10
 ```
 conda activate comfy
 ```
+Note: If you get an error export this environment variable ```CRYPTOGRAPHY_OPENSSL_NO_LEGACY=1```
+you can add this to your ```.bashrc``` or ```.zshrc```
+```
+export CRYPTOGRAPHY_OPENSSL_NO_LEGACY=1
+```
 
 ## Install python dependencies (nvidia)
 ```
@@ -35,3 +40,6 @@ cd ~/ComfyUI
 python main.py
 ```
 The ComfyUI webUI is on http://127.0.0.1:8188/
+
+You can create an alias to put on your ```.bashrc``` or ```.zshrc```
+alias comfyui='conda activate comfy && python $HOME/ComfyUI/main.py &!'
