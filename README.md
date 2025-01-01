@@ -4,6 +4,11 @@
 ```
 yay -Syyu cuda miniconda3
 ```
+add this to your ```.bashrc``` or ```.zshrc```
+```
+[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
+```
+
 ## Clone the ComfyUI repo
 ```
 git clone https://github.com/comfyanonymous/ComfyUI.git
@@ -42,4 +47,6 @@ python main.py
 The ComfyUI webUI is on http://127.0.0.1:8188/
 
 You can create an alias to put on your ```.bashrc``` or ```.zshrc```
+```
 alias comfyui='conda activate comfy && python $HOME/ComfyUI/main.py &!'
+```
